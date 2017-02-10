@@ -1,0 +1,108 @@
+body {
+  font-size: 100%;
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 20px;
+}
+
+/* --- heading styles ---*/
+header h1.title {
+  font-size: 1.75em;
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+/* --- grid styles ---*/
+.container .box{
+  width: 32%;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin-top: 50px;
+}
+
+.container .grid-column .box {
+  padding: 40px 20px 20px 20px;
+  position: relative;
+}
+
+.container .box.first {
+  background-color: #99F0B5;
+  margin-right: 2.5%;
+}
+
+.container .box.first .title {
+  background-color: #422040;
+  color: white;
+}
+
+.container .box.second {
+  background-color: #4FEFA7;
+  margin-right: 1.5%;
+}
+
+.container .box.second .title {
+  background-color: #241020;
+  color: white;
+
+}
+
+.container .box.third {
+  background-color: #D3F6C4;
+}
+
+.container .box.third .title {
+  background-color: #402F57;
+  color: white;
+}
+
+
+header h2.title {
+  font-size: 1.25em;
+  text-align: center;
+  background-color: grey;
+  width: 150px;
+  padding: 5px;
+  border: 1px solid black;
+  border-bottom-left-radius: 5px;
+  border-top: none;
+  border-right: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+/* --- MEDIA QUERIES ---*/
+
+/* --- Tablet --- */
+@media (max-width: 991px) and (min-width: 768px) {
+  .container .box.first,
+  .container .box.second {
+    width: 49%;
+  }
+
+  .container .box.first {
+    margin-right:2%;
+  }
+
+  .container .box.second {
+    margin-right: 0;
+  }
+
+  .container .box.third {
+    width: 100%;
+    margin-top: 2%;
+  }
+}
+
+/* --- Mobile --- */
+@media (max-width: 767px) {
+  body {
+    padding: 20px 40px 20px 50px;
+  }
+  .container .box {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
