@@ -6,13 +6,14 @@
 #bs-example-navbar-collapse-1 .navbar-right a {
   color: #231F20;
 }
-
+#bs-example-navbar-collapse-1 .navbar-right a:hover {
+  background-color: #E0E6FF;
+}
 section {
   height: 1000px;
   background-color: #AFB886;
   padding-top: 30px;
 }
-
 @media (max-width: 767px) {
   .navbar #bs-example-navbar-collapse-1 {
     background-color: #E0DBFF;
